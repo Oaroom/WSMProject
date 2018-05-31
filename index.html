@@ -1,0 +1,67 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>도서관찾기</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d983f9cc346e4c21f9e84314ca75f5ca"></script>
+	
+	<script src="korean.js"></script>
+		<script src="road.js"></script>
+	<link rel="stylesheet" href="korean.css">
+		<link rel="stylesheet" href="road.css">
+</head>
+<body>
+
+<div id="cover_close" onclick="document.getElementById('cover_close').style.display = 'none';" style="cursor:pointer;">
+<!-- style.display = 'none': click 하면 사라짐 -->
+	 <img src="marker.png" style="width:100%; height:100%; position:absolute; z-index:5;"> 
+	 <br> <br> <br> <br> <br>
+	<img src="marker.png" style="width:70%;left:15%; position:absolute; z-index:7;">
+</div>
+<div data-role="header">
+<center><div style="background-color: #3B240B"><font color="#FFFFF0" size=5>자연과 함께 힐링을</font></div></center>
+</div><!-- /header -->	
+<center><div style="background-color: #3B240B"><font color="#FFFFF0" size=5> 구별 캠핑장 </font></div></center>
+</div><!-- /header -->	
+<center>
+<font size=2 color="white" style="z-index:4;font-family:dotum; font-size:5; vertical-align:middle; margin-top:5px;">구별 검색</font>
+<SELECT id="gu" style="z-index:4;font-family:dotum; font-size:0.7em; vertical-align:middle; margin-top:5px;">
+		
+	
+		<option value="강동구">강동구</option>
+		<option value="강북구">강북구</option>
+		<option value="강북구">광진구</option>
+		<option value="구로구">구로구</option>
+		<option value="노원구">노원구</option>
+		<option value="마포구">마포구</option>
+		<option value="서초구">서초구</option>
+		<option value="성동구">성동구</option>
+		<option value="송파구">송파구</option>
+		<option value="영등포구">영등포구</option>
+		<option value="중랑구">중랑구</option>
+ 	</SELECT>
+<input type=button value="검색" onclick="find()" style="font-family:dotum; font-size:0.7em; vertical-align:middle; margin-top:5px; background-color:#fff; border:0; cursor:pointer;"/><br>
+
+<br><br>
+
+
+</center>
+<hr color="white" size=3></hr>
+<div id="map"></div>
+<div id="camping"></div>
+
+<br>
+<br>
+
+
+<div id="road"> 여기는 로드입니다. </div>
+
+
+
+</body>
+</html>
