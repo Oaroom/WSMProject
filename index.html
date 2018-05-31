@@ -12,8 +12,10 @@
 	
 	<script src="korean.js"></script>
 		<script src="road.js"></script>
+	
 	<link rel="stylesheet" href="korean.css">
 		<link rel="stylesheet" href="road.css">
+	
 </head>
 <body>
 
@@ -58,8 +60,57 @@
 <br>
 <br>
 
+<center><div style="background-color: #3B240B"><font color="#FFFFF0" size=5> 서울의 둘레길 정보를 살펴보세요! </font></div></center>
 
-<div id="road"> 여기는 로드입니다. </div>
+<SELECT id="gu" style="z-index:4;font-family:dotum; font-size:0.7em; vertical-align:middle; margin-top:5px;">
+		
+	
+		<option value="초급">초급</option>
+		<option value="중급">중급</option>
+		<option value="고급">고급</option>
+ 	</SELECT>
+
+
+<div id="roads"> 왜 안나옴? </div>
+
+<br>
+<br>
+<br>
+
+
+<center><div style="background-color: #3B240B"><font color="#FFFFF0" size=5> 생태공원 </font></div></center>
+
+ <div id="parks"> </div>
+ 
+ 
+ 
+ 
+<center><div style="background-color: #3B240B"><font color="#FFFFF0" size=5> 자동차 대신 자전거는 어때요? </font></div></center>
+
+ <div id="map1"> </div>
+ 
+
+
+<center>
+<font size=2 color="white" style="z-index:4;font-family:dotum; font-size:5; vertical-align:middle; margin-top:5px;">구별 검색</font>
+<SELECT id="gu" style="z-index:4;font-family:dotum; font-size:0.7em; vertical-align:middle; margin-top:5px;">
+		
+	
+		<option value="강동구">강동구</option>
+		<option value="강북구">강북구</option>
+		<option value="강북구">광진구</option>
+		<option value="구로구">구로구</option>
+		<option value="노원구">노원구</option>
+		<option value="마포구">마포구</option>
+		<option value="서초구">서초구</option>
+		<option value="성동구">성동구</option>
+		<option value="송파구">송파구</option>
+		<option value="영등포구">영등포구</option>
+		<option value="중랑구">중랑구</option>
+ 	</SELECT>
+<input type=button value="검색" onclick="find1()" style="font-family:dotum; font-size:0.7em; vertical-align:middle; margin-top:5px; background-color:#fff; border:0; cursor:pointer;"/><br>
+
+<br><br>
 
 
 

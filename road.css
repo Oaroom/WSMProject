@@ -1,6 +1,28 @@
-#road{
-	
-	
-	background-color:yellow;
-	
+div#roads {
+	background-color: #ccffcc;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	margin: 10px 0px 0px 0px;
+	padding: 0px;
+	border: 1px solid #d9d9d9;
+}
+div.roads {
+	font-family: Verdana, Helvetica, sans-serif;
+	color: #0000ff;
+	padding: 10px;
+}
+div.roads:nth-child(2n) {
+	background-color: #eeee00;
+}
+div.roads:first-child {
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+div.roads:last-child {
+	-webkit-border-bottom-left-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
 }
